@@ -23,17 +23,17 @@
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="vsy-5X-M53">
                                         <rect key="frame" x="0.0" y="0.0" width="390" height="148.33333333333334"/>
                                         <subviews>
-                                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="User Name" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="eCy-YR-QZT">
+                                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Login" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="eCy-YR-QZT">
                                                 <rect key="frame" x="0.0" y="0.0" width="390" height="34"/>
                                                 <color key="backgroundColor" systemColor="secondarySystemBackgroundColor"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no" returnKeyType="next" smartDashesType="no" smartInsertDeleteType="no" smartQuotesType="no" textContentType="username"/>
+                                                <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no" returnKeyType="next" enablesReturnKeyAutomatically="YES" smartDashesType="no" smartInsertDeleteType="no" smartQuotesType="no" textContentType="username"/>
                                             </textField>
                                             <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="KmJ-WB-og1">
                                                 <rect key="frame" x="0.0" y="54" width="390" height="34"/>
                                                 <color key="backgroundColor" systemColor="secondarySystemBackgroundColor"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no" returnKeyType="continue" secureTextEntry="YES" smartDashesType="no" smartInsertDeleteType="no" smartQuotesType="no" textContentType="password"/>
+                                                <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no" returnKeyType="continue" enablesReturnKeyAutomatically="YES" secureTextEntry="YES" smartDashesType="no" smartInsertDeleteType="no" smartQuotesType="no" textContentType="password"/>
                                             </textField>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UOY-4V-TQc">
                                                 <rect key="frame" x="0.0" y="107.99999999999999" width="390" height="40.333333333333329"/>
@@ -44,6 +44,9 @@
                                                 <buttonConfiguration key="configuration" style="plain" title="Log In">
                                                     <fontDescription key="titleFontDescription" style="UICTFontTextStyleTitle2"/>
                                                 </buttonConfiguration>
+                                                <connections>
+                                                    <segue destination="GCE-WH-1rS" kind="presentation" modalPresentationStyle="fullScreen" id="AkT-cX-u0U"/>
+                                                </connections>
                                             </button>
                                         </subviews>
                                     </stackView>
@@ -85,14 +88,59 @@
                     <toolbarItems/>
                     <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
                     <connections>
-                        <outlet property="logInButton" destination="UOY-4V-TQc" id="yrL-dD-U9x"/>
-                        <outlet property="password" destination="KmJ-WB-og1" id="7vj-C0-pIV"/>
-                        <outlet property="userName" destination="eCy-YR-QZT" id="8vd-kL-BgV"/>
+                        <outlet property="logInButton" destination="UOY-4V-TQc" id="13Y-pY-ZTT"/>
+                        <outlet property="loginTF" destination="eCy-YR-QZT" id="8vd-kL-BgV"/>
+                        <outlet property="passwordTF" destination="KmJ-WB-og1" id="7vj-C0-pIV"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="139" y="-2"/>
+        </scene>
+        <!--Welcome View Controller-->
+        <scene sceneID="6Kd-9c-rLB">
+            <objects>
+                <viewController id="GCE-WH-1rS" customClass="WelcomeViewController" customModule="HomeWork_2_05" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="iFv-l6-UNS">
+                        <rect key="frame" x="0.0" y="0.0" width="430" height="932"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="171" translatesAutoresizingMaskIntoConstraints="NO" id="hYq-Sm-Wdm">
+                                <rect key="frame" x="156.66666666666666" y="333.66666666666663" width="116.99999999999997" height="264.66666666666663"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Text" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yK4-mb-dka">
+                                        <rect key="frame" x="28.333333333333346" y="0.0" width="60.333333333333343" height="40.666666666666664"/>
+                                        <fontDescription key="fontDescription" style="UICTFontTextStyleTitle0"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Fkh-vj-NbF">
+                                        <rect key="frame" x="0.0" y="211.66666666666669" width="117" height="53"/>
+                                        <fontDescription key="fontDescription" style="UICTFontTextStyleTitle0"/>
+                                        <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                        <state key="normal" title="Log Out"/>
+                                        <connections>
+                                            <segue destination="VOh-kk-1Y9" kind="unwind" unwindAction="unwindFor:" id="fAH-u8-Y1P"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="YNh-7n-EZx"/>
+                        <color key="backgroundColor" systemColor="systemOrangeColor"/>
+                        <constraints>
+                            <constraint firstItem="hYq-Sm-Wdm" firstAttribute="centerY" secondItem="iFv-l6-UNS" secondAttribute="centerY" id="f1r-Ue-i8U"/>
+                            <constraint firstItem="hYq-Sm-Wdm" firstAttribute="centerX" secondItem="iFv-l6-UNS" secondAttribute="centerX" id="ujp-WS-AOb"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="greetingsTF" destination="yK4-mb-dka" id="TNg-nD-Kcj"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="KTf-PD-Lqg" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <exit id="VOh-kk-1Y9" userLabel="Exit" sceneMemberID="exit"/>
+            </objects>
+            <point key="canvasLocation" x="994.88372093023258" y="-3.218884120171674"/>
         </scene>
     </scenes>
     <resources>
@@ -104,6 +152,9 @@
         </systemColor>
         <systemColor name="secondarySystemGroupedBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemOrangeColor">
+            <color red="1" green="0.58431372549019611" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>

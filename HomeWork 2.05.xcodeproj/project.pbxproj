@@ -13,6 +13,7 @@
 		7A5F3D702A7E52D1008B59D4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7A5F3D6E2A7E52D1008B59D4 /* Main.storyboard */; };
 		7A5F3D722A7E52D2008B59D4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7A5F3D712A7E52D2008B59D4 /* Assets.xcassets */; };
 		7A5F3D752A7E52D2008B59D4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7A5F3D732A7E52D2008B59D4 /* LaunchScreen.storyboard */; };
+		7A5F3D9D2A7EA56E008B59D4 /* WelcomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A5F3D9C2A7EA56E008B59D4 /* WelcomeViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 		7A5F3D712A7E52D2008B59D4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		7A5F3D742A7E52D2008B59D4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		7A5F3D762A7E52D2008B59D4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7A5F3D9C2A7EA56E008B59D4 /* WelcomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = WelcomeViewController.swift; path = ../../../../../WelcomeViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,6 +61,7 @@
 				7A5F3D682A7E52D1008B59D4 /* AppDelegate.swift */,
 				7A5F3D6A2A7E52D1008B59D4 /* SceneDelegate.swift */,
 				7A5F3D6C2A7E52D1008B59D4 /* LoginViewController.swift */,
+				7A5F3D9C2A7EA56E008B59D4 /* WelcomeViewController.swift */,
 				7A5F3D6E2A7E52D1008B59D4 /* Main.storyboard */,
 				7A5F3D712A7E52D2008B59D4 /* Assets.xcassets */,
 				7A5F3D732A7E52D2008B59D4 /* LaunchScreen.storyboard */,
@@ -139,6 +142,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				7A5F3D6D2A7E52D1008B59D4 /* LoginViewController.swift in Sources */,
+				7A5F3D9D2A7EA56E008B59D4 /* WelcomeViewController.swift in Sources */,
 				7A5F3D692A7E52D1008B59D4 /* AppDelegate.swift in Sources */,
 				7A5F3D6B2A7E52D1008B59D4 /* SceneDelegate.swift in Sources */,
 			);
