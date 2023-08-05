@@ -86,6 +86,8 @@
                     <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
                     <connections>
                         <outlet property="logInButton" destination="UOY-4V-TQc" id="yrL-dD-U9x"/>
+                        <outlet property="password" destination="KmJ-WB-og1" id="7vj-C0-pIV"/>
+                        <outlet property="userName" destination="eCy-YR-QZT" id="8vd-kL-BgV"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
