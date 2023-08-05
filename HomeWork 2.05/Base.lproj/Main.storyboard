@@ -55,12 +55,18 @@
                                                 <fontDescription key="fontDescription" style="UICTFontTextStyleCaption1"/>
                                                 <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
                                                 <state key="normal" title="Forgot User Name?"/>
+                                                <connections>
+                                                    <action selector="pressButtonForgotUserName" destination="BYZ-38-t0r" eventType="touchUpInside" id="RNU-Fd-TfR"/>
+                                                </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="249" contentHorizontalAlignment="trailing" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="D5y-Qx-IkQ">
                                                 <rect key="frame" x="111" y="0.0" width="279" height="27"/>
                                                 <fontDescription key="fontDescription" style="UICTFontTextStyleCaption1"/>
                                                 <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
                                                 <state key="normal" title="Forgot Password?"/>
+                                                <connections>
+                                                    <action selector="pressButtonForgotPassword" destination="BYZ-38-t0r" eventType="touchUpInside" id="hIN-HX-Muo"/>
+                                                </connections>
                                             </button>
                                         </subviews>
                                     </stackView>
@@ -78,6 +84,9 @@
                     </view>
                     <toolbarItems/>
                     <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
+                    <connections>
+                        <outlet property="logInButton" destination="UOY-4V-TQc" id="yrL-dD-U9x"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
