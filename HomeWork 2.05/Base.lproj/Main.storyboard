@@ -17,72 +17,66 @@
                         <rect key="frame" x="0.0" y="0.0" width="430" height="932"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="7of-oZ-GFe">
-                                <rect key="frame" x="20" y="371" width="390" height="190.33333333333337"/>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="19" translatesAutoresizingMaskIntoConstraints="NO" id="A1v-2p-f7L">
+                                <rect key="frame" x="16" y="393" width="398" height="146.33333333333337"/>
                                 <subviews>
-                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="vsy-5X-M53">
-                                        <rect key="frame" x="0.0" y="0.0" width="390" height="148.33333333333334"/>
-                                        <subviews>
-                                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Login" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="eCy-YR-QZT">
-                                                <rect key="frame" x="0.0" y="0.0" width="390" height="34"/>
-                                                <color key="backgroundColor" systemColor="secondarySystemBackgroundColor"/>
-                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no" returnKeyType="next" enablesReturnKeyAutomatically="YES" smartDashesType="no" smartInsertDeleteType="no" smartQuotesType="no" textContentType="username"/>
-                                            </textField>
-                                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="KmJ-WB-og1">
-                                                <rect key="frame" x="0.0" y="54" width="390" height="34"/>
-                                                <color key="backgroundColor" systemColor="secondarySystemBackgroundColor"/>
-                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no" returnKeyType="continue" enablesReturnKeyAutomatically="YES" secureTextEntry="YES" smartDashesType="no" smartInsertDeleteType="no" smartQuotesType="no" textContentType="password"/>
-                                            </textField>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UOY-4V-TQc">
-                                                <rect key="frame" x="0.0" y="107.99999999999999" width="390" height="40.333333333333329"/>
-                                                <color key="backgroundColor" name="AccentColor"/>
-                                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
-                                                <state key="normal" title="Log In"/>
-                                                <buttonConfiguration key="configuration" style="plain" title="Log In">
-                                                    <fontDescription key="titleFontDescription" style="UICTFontTextStyleTitle2"/>
-                                                </buttonConfiguration>
-                                                <connections>
-                                                    <segue destination="GCE-WH-1rS" kind="presentation" modalPresentationStyle="fullScreen" id="AkT-cX-u0U"/>
-                                                </connections>
-                                            </button>
-                                        </subviews>
-                                    </stackView>
-                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="188" translatesAutoresizingMaskIntoConstraints="NO" id="pLP-Xf-7CZ">
-                                        <rect key="frame" x="0.0" y="163.33333333333337" width="390" height="27"/>
-                                        <subviews>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="leading" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xVE-bQ-VZf">
-                                                <rect key="frame" x="0.0" y="0.0" width="101" height="27"/>
-                                                <fontDescription key="fontDescription" style="UICTFontTextStyleCaption1"/>
-                                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
-                                                <state key="normal" title="Forgot Login?"/>
-                                                <connections>
-                                                    <action selector="pressButtonForgotUserName" destination="BYZ-38-t0r" eventType="touchUpInside" id="RNU-Fd-TfR"/>
-                                                </connections>
-                                            </button>
-                                            <button opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="249" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="D5y-Qx-IkQ">
-                                                <rect key="frame" x="289" y="0.0" width="101" height="27"/>
-                                                <fontDescription key="fontDescription" style="UICTFontTextStyleCaption1"/>
-                                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
-                                                <state key="normal" title="Forgot Password?"/>
-                                                <connections>
-                                                    <action selector="pressButtonForgotPassword" destination="BYZ-38-t0r" eventType="touchUpInside" id="hIN-HX-Muo"/>
-                                                </connections>
-                                            </button>
-                                        </subviews>
-                                    </stackView>
+                                    <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Login" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="eCy-YR-QZT">
+                                        <rect key="frame" x="0.0" y="0.0" width="398" height="34"/>
+                                        <color key="backgroundColor" systemColor="secondarySystemBackgroundColor"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no" returnKeyType="next" enablesReturnKeyAutomatically="YES" smartDashesType="no" smartInsertDeleteType="no" smartQuotesType="no" textContentType="username"/>
+                                    </textField>
+                                    <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="KmJ-WB-og1">
+                                        <rect key="frame" x="0.0" y="53" width="398" height="34"/>
+                                        <color key="backgroundColor" systemColor="secondarySystemBackgroundColor"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no" returnKeyType="continue" enablesReturnKeyAutomatically="YES" secureTextEntry="YES" smartDashesType="no" smartInsertDeleteType="no" smartQuotesType="no" textContentType="password"/>
+                                    </textField>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UOY-4V-TQc">
+                                        <rect key="frame" x="0.0" y="106" width="398" height="40.333333333333343"/>
+                                        <color key="backgroundColor" name="AccentColor"/>
+                                        <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                        <state key="normal" title="Log In"/>
+                                        <buttonConfiguration key="configuration" style="plain" title="Log In">
+                                            <fontDescription key="titleFontDescription" style="UICTFontTextStyleTitle2"/>
+                                        </buttonConfiguration>
+                                        <connections>
+                                            <segue destination="GCE-WH-1rS" kind="presentation" modalPresentationStyle="fullScreen" id="AkT-cX-u0U"/>
+                                        </connections>
+                                    </button>
                                 </subviews>
                             </stackView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="leading" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xVE-bQ-VZf">
+                                <rect key="frame" x="16" y="559.33333333333337" width="78" height="27"/>
+                                <fontDescription key="fontDescription" style="UICTFontTextStyleCaption1"/>
+                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                <state key="normal" title="Forgot Login?"/>
+                                <connections>
+                                    <action selector="pressButtonForgotUserName" destination="BYZ-38-t0r" eventType="touchUpInside" id="RNU-Fd-TfR"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="249" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="D5y-Qx-IkQ">
+                                <rect key="frame" x="313" y="559.33333333333337" width="101" height="27"/>
+                                <fontDescription key="fontDescription" style="UICTFontTextStyleCaption1"/>
+                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                <state key="normal" title="Forgot Password?"/>
+                                <connections>
+                                    <action selector="pressButtonForgotPassword" destination="BYZ-38-t0r" eventType="touchUpInside" id="hIN-HX-Muo"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="secondarySystemGroupedBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="7of-oZ-GFe" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="3pz-m3-fq9"/>
-                            <constraint firstItem="7of-oZ-GFe" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="Ajh-X1-pBj"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="7of-oZ-GFe" secondAttribute="trailing" constant="20" id="YqG-Mx-YbX"/>
-                            <constraint firstItem="7of-oZ-GFe" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="pzZ-FE-tcm"/>
+                            <constraint firstItem="A1v-2p-f7L" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="5oH-1U-XAN"/>
+                            <constraint firstItem="D5y-Qx-IkQ" firstAttribute="top" secondItem="A1v-2p-f7L" secondAttribute="bottom" constant="20" id="ITN-Sj-rYo"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="D5y-Qx-IkQ" secondAttribute="trailing" constant="16" id="NVs-kb-v9n"/>
+                            <constraint firstItem="xVE-bQ-VZf" firstAttribute="top" secondItem="A1v-2p-f7L" secondAttribute="bottom" constant="20" id="QuL-fE-BRN"/>
+                            <constraint firstItem="A1v-2p-f7L" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="YTi-SS-0XS"/>
+                            <constraint firstItem="D5y-Qx-IkQ" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="xVE-bQ-VZf" secondAttribute="trailing" constant="8" symbolic="YES" id="iZZ-o1-Rm9"/>
+                            <constraint firstItem="xVE-bQ-VZf" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="lgO-Gd-8aO"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="A1v-2p-f7L" secondAttribute="trailing" constant="16" id="xoa-A8-ash"/>
                         </constraints>
                     </view>
                     <toolbarItems/>

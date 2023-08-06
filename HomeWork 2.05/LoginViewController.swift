@@ -13,6 +13,8 @@ final class LoginViewController: UIViewController, UITextFieldDelegate {
         
         loginTF.delegate = self
         passwordTF.delegate = self
+        
+        
     }
     
     override func shouldPerformSegue(withIdentifier identifier: String, sender: Any?) -> Bool {
