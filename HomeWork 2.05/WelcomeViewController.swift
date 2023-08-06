@@ -2,13 +2,13 @@ import UIKit
 
 class WelcomeViewController: UIViewController {
 
-    @IBOutlet var greetingsTF: UILabel!
+    @IBOutlet var greetingTF: UILabel!
     
-    var greetings: String!
+    var greeting: String!
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        greetingsTF.text = greetings
+        greetingTF.text = greeting
     }
     
 }

@@ -41,15 +41,10 @@ final class LoginViewController: UIViewController {
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         let settingsVC = segue.destination as? WelcomeViewController
         
-        settingsVC?.greetings = "Wellcom, \(loginTF.text ?? "")"
+        settingsVC?.greeting = "Wellcom, \(loginTF.text ?? "")"
     }
 
 // MARK: - IB Actions
-    @IBAction func unwind(for segue: UIStoryboardSegue) {
-        loginTF.text = ""
-        passwordTF.text = ""
-    }
-    
     @IBAction func pressButtonForgotLogin() {
         showAlert(whithTitle: "Warning!",
                   andMessage: "Your login is root.",
@@ -62,11 +57,16 @@ final class LoginViewController: UIViewController {
                   andWithAssignment: nil)
     }
     
+    @IBAction func unwind(for segue: UIStoryboardSegue) {
+        loginTF.text = ""
+        passwordTF.text = ""
+    }
+    
 // MARK: - Private method
     private func showAlert(
         whithTitle title: String,
         andMessage message: String,
-        andWithAssignment: String?
+        andWithAssignment assignment: String?
     ) {
         let alert = UIAlertController(
             title: title,
@@ -74,11 +74,11 @@ final class LoginViewController: UIViewController {
             preferredStyle: .alert
         )
         
-        switch andWithAssignment {
+        switch assignment {
         case "Сlear password field":
             alert.addAction(
-                UIAlertAction(title: "Repeat", style: .default) {
-                    _ in self.passwordTF.text = ""
+                UIAlertAction(title: "Repeat", style: .default) { _ in
+                    self.passwordTF.text = ""
                 }
             )
         default: alert.addAction(UIAlertAction(title: "OK", style: .default))
