@@ -53,7 +53,7 @@
                                 <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
                                 <state key="normal" title="Forgot Login?"/>
                                 <connections>
-                                    <action selector="pressButtonForgotUserName" destination="BYZ-38-t0r" eventType="touchUpInside" id="RNU-Fd-TfR"/>
+                                    <action selector="pressButtonForgotLogin" destination="BYZ-38-t0r" eventType="touchUpInside" id="RNU-Fd-TfR"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="249" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="D5y-Qx-IkQ">
@@ -94,7 +94,7 @@
         <!--Welcome View Controller-->
         <scene sceneID="6Kd-9c-rLB">
             <objects>
-                <viewController id="GCE-WH-1rS" customClass="WelcomeViewController" customModule="HomeWork_2_05" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="GCE-WH-1rS" customClass="WelcomeViewController" customModule="HomeWork_2_05" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="iFv-l6-UNS">
                         <rect key="frame" x="0.0" y="0.0" width="430" height="932"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
