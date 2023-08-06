@@ -20,6 +20,7 @@ final class LoginViewController: UIViewController {
     
     override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
         super .touchesBegan(touches, with: event)
+        view.endEditing(true)
     }
     
     override func shouldPerformSegue(
@@ -27,9 +28,10 @@ final class LoginViewController: UIViewController {
         sender: Any?
     ) -> Bool {
         guard loginTF.text == "root", passwordTF.text == "123" else {
-            showAlertForInvalidPassOrLog(
+            showAlert(
                 whithTitle: "Invalid login or password!",
-                andMessage: "Please, enter correct login or password"
+                andMessage: "Please, enter correct login or password",
+                andWithAssignment: "Сlear password field"
             )
             return false
         }
@@ -49,11 +51,40 @@ final class LoginViewController: UIViewController {
     }
     
     @IBAction func pressButtonForgotLogin() {
-        showAlertBut(whithTitle: "Warning!",andMessage: "Your login is root.")
+        showAlert(whithTitle: "Warning!",
+                  andMessage: "Your login is root.",
+                  andWithAssignment: nil)
     }
     
     @IBAction func pressButtonForgotPassword() {
-        showAlertBut(whithTitle: "Warning!",andMessage: "Your password is 123.")
+        showAlert(whithTitle: "Warning!",
+                  andMessage: "Your password is 123.",
+                  andWithAssignment: nil)
+    }
+    
+// MARK: - Private method
+    private func showAlert(
+        whithTitle title: String,
+        andMessage message: String,
+        andWithAssignment: String?
+    ) {
+        let alert = UIAlertController(
+            title: title,
+            message: message,
+            preferredStyle: .alert
+        )
+        
+        switch andWithAssignment {
+        case "Сlear password field":
+            alert.addAction(
+                UIAlertAction(title: "Repeat", style: .default) {
+                    _ in self.passwordTF.text = ""
+                }
+            )
+        default: alert.addAction(UIAlertAction(title: "OK", style: .default))
+        }
+        
+        present(alert, animated: true)
     }
 }
 
@@ -62,47 +93,9 @@ extension LoginViewController: UITextFieldDelegate {
     func textFieldShouldReturn(_ textField: UITextField) -> Bool {
         switch textField {
         case loginTF: passwordTF.becomeFirstResponder()
-        default:
-            loginTF.becomeFirstResponder()
-            logInButton.sendActions(for: .touchUpInside)
+        default: logInButton.sendActions(for: .touchUpInside)
         }
+        
         return true
-    }
-}
-
-// MARK: - Alert methods
-extension LoginViewController {
-    private func showAlertBut(
-        whithTitle title: String,
-        andMessage message: String
-    ) {
-        let alert = UIAlertController(
-            title: title,
-            message: message,
-            preferredStyle: .alert
-        )
-        
-        alert.addAction(UIAlertAction(title: "OK", style: .default))
-        
-        present(alert, animated: true)
-    }
-    
-    private func showAlertForInvalidPassOrLog(
-        whithTitle title: String,
-        andMessage message: String
-    ) {
-        let alert = UIAlertController(
-            title: title,
-            message: message,
-            preferredStyle: .alert
-        )
-        
-        alert.addAction(
-            UIAlertAction(title: "OK", style: .default) {
-                _ in self.passwordTF.text = ""
-            }
-        )
-        
-        present(alert, animated: true)
     }
 }

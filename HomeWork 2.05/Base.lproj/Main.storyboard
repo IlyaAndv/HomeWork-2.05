@@ -69,14 +69,14 @@
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="secondarySystemGroupedBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="A1v-2p-f7L" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="5oH-1U-XAN"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="A1v-2p-f7L" secondAttribute="trailing" constant="16" id="4vl-lm-w0b"/>
                             <constraint firstItem="D5y-Qx-IkQ" firstAttribute="top" secondItem="A1v-2p-f7L" secondAttribute="bottom" constant="20" id="ITN-Sj-rYo"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="D5y-Qx-IkQ" secondAttribute="trailing" constant="16" id="NVs-kb-v9n"/>
                             <constraint firstItem="xVE-bQ-VZf" firstAttribute="top" secondItem="A1v-2p-f7L" secondAttribute="bottom" constant="20" id="QuL-fE-BRN"/>
-                            <constraint firstItem="A1v-2p-f7L" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="YTi-SS-0XS"/>
+                            <constraint firstItem="A1v-2p-f7L" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="R8V-i6-jvT"/>
                             <constraint firstItem="D5y-Qx-IkQ" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="xVE-bQ-VZf" secondAttribute="trailing" constant="8" symbolic="YES" id="iZZ-o1-Rm9"/>
+                            <constraint firstItem="A1v-2p-f7L" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="jbG-Gs-Zm5"/>
                             <constraint firstItem="xVE-bQ-VZf" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="lgO-Gd-8aO"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="A1v-2p-f7L" secondAttribute="trailing" constant="16" id="xoa-A8-ash"/>
                         </constraints>
                     </view>
                     <toolbarItems/>
@@ -89,7 +89,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="139" y="-2"/>
+            <point key="canvasLocation" x="138.13953488372093" y="-2.5751072961373391"/>
         </scene>
         <!--Welcome View Controller-->
         <scene sceneID="6Kd-9c-rLB">
